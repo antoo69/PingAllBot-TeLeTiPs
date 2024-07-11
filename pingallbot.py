@@ -23,7 +23,7 @@ chatQueue = []
 
 stopProcess = False
 
-@teletips.on_message(filters.command(["ping","all"]))
+@teletips.on_message(filters.command(["tagall"]))
 async def everyone(client, message):
   global stopProcess
   try: 
@@ -238,7 +238,7 @@ My name is **PingAll**. I'm here to help you to get everyone's attention by ment
 
 I have some additional cool features and also I can work in channels.
 
-Don't forget to join my [channel](http://t.me/teletipsofficialchannel) to recieve information on all the latest updates.
+Don't forget to join my [channel](http://t.me/Nenen_degrees) to recieve information on all the latest updates.
 
 Hit /help to find out my commands and the use of them.
 '''
@@ -251,7 +251,7 @@ async def help(client, message):
 Hey, let's have a quick look at my commands.
 
 **Commands**:
-- /ping "input": <i>Mention all members.</i>
+- /tagall "input": <i>Mention all members.</i>
 - /remove: <i>Remove all deleted accounts.</i>
 - /admins: <i>Mention all admins.</i>
 - /bots: <i>Get the full bot list.</i>
@@ -261,7 +261,7 @@ If you have any questions on how to use me, feel free to ask in my [support grou
 '''
   await teletips.send_message(message.chat.id, text, disable_web_page_preview=True)
 
-print("PingAll is alive!")  
+print("TagAll is alive!")  
 teletips.run()
  
 #Copyright ©️ 2021 TeLe TiPs. All Rights Reserved 
