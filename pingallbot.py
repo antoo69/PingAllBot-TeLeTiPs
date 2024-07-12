@@ -23,7 +23,7 @@ chatQueue = []
 
 stopProcess = False
 
-@teletips.on_message(filters.command(["tagall"]))
+@teletips.on_message(filters.command(["utag"]))
 async def everyone(client, message):
   global stopProcess
   try: 
@@ -89,7 +89,7 @@ async def everyone(client, message):
   except FloodWait as e:
     await asyncio.sleep(e.value) 
 
-@teletips.on_message(filters.command(["remove","clean"]))
+@teletips.on_message(filters.command(["dell","clean"]))
 async def remove(client, message):
   global stopProcess
   try: 
